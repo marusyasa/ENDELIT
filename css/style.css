@@ -507,3 +507,69 @@ body {
 .cart-items {
     overflow-x: hidden;
 }
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding-right: 36px; /* место под крестик */
+}
+
+.clear-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    font-size: 22px;
+    line-height: 1;
+    color: #999;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.clear-search:hover {
+    color: #333;
+}
+
+.clear-search[hidden] {
+    display: none;
+}
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px 24px 24px;
+    overflow-y: auto;
+    max-height: 75vh;
+}
+
+.checkout-form label {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus {
+    outline: none;
+    border-color: #d6336c; /* поменяй на свой розовый */
+}
+
+.checkout-summary {
+    font-weight: bold;
+    margin: 0 0 8px;
+}
+
+.checkout-form .cart-actions {
+    margin-top: 16px;
+}

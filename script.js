@@ -109,10 +109,15 @@ function displayProducts(booksToDisplay) {
 }
 
 function filterProducts() {
+    const query = searchQuery.toLowerCase();
+
     return products.filter(book => {
-        const matchesCategory = (pageCategory === "all") || (book.categories === pageCategory);
-        const matchesSearch = book.title.toLowerCase().includes(searchQuery.toLowerCase());
-        return matchesCategory && matchesSearch;
+    
+        if (query) {
+            return book.title.toLowerCase().includes(query);
+        }
+        
+        return pageCategory === "all" || book.categories === pageCategory;
     });
 }
 
@@ -121,9 +126,27 @@ function updateDisplay() {
 }
 
 if (searchInput) {
+    // кнопка-крестик внутри .search-box
+    const clearSearchBtn = document.createElement('button');
+    clearSearchBtn.type = 'button';
+    clearSearchBtn.className = 'clear-search';
+    clearSearchBtn.setAttribute('aria-label', 'Очистити пошук');
+    clearSearchBtn.innerHTML = '&times;';
+    clearSearchBtn.hidden = true;
+    searchInput.parentElement.appendChild(clearSearchBtn);
+
     searchInput.addEventListener('input', (event) => {
         searchQuery = event.target.value.trim();
+        clearSearchBtn.hidden = searchInput.value === ''; // крестик виден, только если есть текст
         updateDisplay();
+    });
+
+    clearSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchQuery = '';
+        clearSearchBtn.hidden = true;
+        updateDisplay();
+        searchInput.focus();
     });
 }
 
@@ -339,11 +362,130 @@ clearCartBtn.addEventListener('click', () => {
     saveCart();
 });
 
+/* ===================== ОФОРМЛЕННЯ ЗАМОВЛЕННЯ ===================== */
+
+function getCartTotal() {
+    return cart.reduce((sum, item) => {
+        const book = products.find(p => p.id === item.id);
+        return sum + (book ? book.price * item.quantity : 0);
+    }, 0);
+}
+
+function buildCheckoutModal() {
+    const old = document.getElementById('checkoutModal');
+    if (old) old.remove();
+
+    const modal = document.createElement('div');
+    modal.id = 'checkoutModal';
+    modal.className = 'cart-modal checkout-modal';
+    modal.innerHTML = `
+        <div class="cart-modal-content" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+            <div class="cart-modal-header">
+                <h2 id="checkoutTitle">Оформлення замовлення</h2>
+                <button type="button" id="closeCheckoutBtn" class="close-cart" aria-label="Закрити">&times;</button>
+            </div>
+
+            <form id="checkoutForm" class="checkout-form">
+                <p id="checkoutSummary" class="checkout-summary"></p>
+
+                <label for="coName">Ім'я та прізвище *</label>
+                <input type="text" id="coName" name="name" required minlength="2" autocomplete="name">
+
+                <label for="coPhone">Телефон *</label>
+                <input type="tel" id="coPhone" name="phone" required autocomplete="tel"
+                       placeholder="+380 50 123 45 67"
+                       pattern="[+0-9 ]{10,18}"
+                       title="Введіть номер телефону, наприклад +380501234567">
+
+                <label for="coEmail">Email</label>
+                <input type="email" id="coEmail" name="email" autocomplete="email">
+
+                <label for="coCity">Місто *</label>
+                <input type="text" id="coCity" name="city" required autocomplete="address-level2">
+
+                <label for="coAddress">Адреса або відділення Нової пошти *</label>
+                <input type="text" id="coAddress" name="address" required
+                       placeholder="Напр.: Відділення №5, вул. Дерибасівська, 10">
+
+                <label for="coComment">Коментар до замовлення</label>
+                <textarea id="coComment" name="comment" rows="3"></textarea>
+
+                <div class="cart-actions">
+                    <button type="button" id="backToCartBtn" class="clear-cart-btn">Назад до кошика</button>
+                    <button type="submit" class="checkout-btn">Підтвердити замовлення</button>
+                </div>
+            </form>
+        </div>
+    `;
+    document.body.appendChild(modal);
+}
+
+buildCheckoutModal();
+
+const checkoutModal = document.getElementById('checkoutModal');
+const checkoutForm = document.getElementById('checkoutForm');
+const checkoutSummary = document.getElementById('checkoutSummary');
+
+function openCheckout() {
+    const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+    checkoutSummary.textContent = `Товарів: ${count} · Разом: ${formatPrice(getCartTotal())}`;
+    checkoutModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCheckout() {
+    checkoutModal.classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+
+// кнопка в кошику -> відкриває форму
 checkoutBtn.addEventListener('click', () => {
     if (cart.length === 0) return;
-    orderPlaced = true;
+    closeCart();
+    openCheckout();
+});
+
+// закриття форми: хрестик, клік повз вікно, Esc
+document.getElementById('closeCheckoutBtn').addEventListener('click', closeCheckout);
+
+checkoutModal.addEventListener('click', (event) => {
+    if (event.target === checkoutModal) closeCheckout();
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && checkoutModal.classList.contains('open')) closeCheckout();
+});
+
+// "Назад до кошика"
+document.getElementById('backToCartBtn').addEventListener('click', () => {
+    closeCheckout();
+    openCart();
+});
+
+// відправка форми
+checkoutForm.addEventListener('submit', (event) => {
+    event.preventDefault(); // браузер уже перевірив required/pattern
+    if (cart.length === 0) return;
+
+    const order = {
+        customer: Object.fromEntries(new FormData(checkoutForm).entries()),
+        items: cart.map(item => ({ id: item.id, title: item.title, quantity: item.quantity })),
+        total: getCartTotal(),
+        date: new Date().toISOString()
+    };
+    console.log('Нове замовлення:', order);
+
+    orderPlaced = true;   // покажемо "Дякуємо за замовлення!"
     cart = [];
-    saveCart();
+    saveCart();           // оновить кошик і лічильник
+    checkoutForm.reset();
+    closeCheckout();
+
+    // відкриваємо кошик одразу з повідомленням подяки
+    // (openCart() не підходить, бо він скидає orderPlaced)
+    cartModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
 });
 
 /* ===================== ЗАПУСК ===================== */
