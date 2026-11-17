@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endelit - Головна</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-top">
+        <a href="index.html" class="logo">
+            <div class="icon-placeholder logo-icon-placeholder"></div>
+            <span class="logo-text"><h1>ENDELIT</h1></span>
+        </a>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Пошук книг...">
+        </div>
+
+       
+        <button type="button" class="cart-btn" id="cartBtn" aria-label="Кошик">
+            🛒 <span id="cartCount">0</span>
+        </button>
+    </div>
+
+   
+    <nav class="categories">
+        <a href="index.html" class="category-btn active">Все</a>
+        <a href="deutsch.html" class="category-btn">Німецька література</a>
+        <a href="english.html" class="category-btn">Англійська література</a>
+    </nav>
+</header>
+
+<main class="main-content">
+    <div class="hero-card">
+        <div class="hero-text">
+            <h1>Купуй Художню та Навчальну літературу вже Зараз. Великий Асортимент та Швидка Доставка</h1>
+            <p>
+                Ми зібрали в одному місці народні казки, сучасну художню літературу та 
+                всесвітньо відомі твори їх рідною мовою. А для тих хто хоче навчитися 
+                читати в оригіналі, маємо навчальні книжки.
+            </p>
+        </div>
+        <div class="hero-image">
+            <div class="img-placeholder">
+                <img src="/images/book-1.jpg" alt="Hero book">
+            </div>
+        </div>
+    </div>
+
+    
+   
+</main>
+ <section class="cards-list">
+        <div id="productsGrid" data-page-category="all" class="books-grid"></div>
+    </section>
+
+
+<script src="/script.js"></script>
+</body>
+</html>

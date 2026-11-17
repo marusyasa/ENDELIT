@@ -1,0 +1,519 @@
+.header {
+    width: 100%;
+    background-color: #FCF8F8;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.header-top {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* ЛОГОТИП */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #111;
+}
+
+.logo-text {
+    font-family: "Prata", Georgia, serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* ИКОНКА КНИГИ В ЛОГОТИПЕ */
+.logo-icon-placeholder {
+    width: 45px;
+    height: 36px;
+    border: 3px solid #080808;
+    border-radius: 2px 8px 2px 2px;
+    position: relative;
+}
+
+.logo-icon-placeholder::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #080808;
+    left: 50%;
+    top: 0;
+}
+
+/* СТРОКА ПОИСКА */
+.search-box {
+    display: flex;
+    flex: 1;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #e0d5d5;
+    background-color: #fff;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #888;
+}
+
+/* ИКОНКА КОРЗИНЫ */
+.cart-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.cart-btn {
+    background: transparent;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cart-btn:hover {
+    background-color: #F9DFDF;
+    transform: scale(1.08);
+}
+
+/* КАТЕГОРИИ (Кнопки под шапкой) */
+.categories {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.category-btn {
+    border: none;
+    background: transparent;
+    padding: 8px 28px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #292323;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.category-btn:hover {
+    background-color: #F9DFDF;
+    transform: translateY(-3px);
+}
+
+.category-btn.active {
+    background-color: #F5AEAE;
+}
+.all-books-section {
+    background-color: #FCF8F8;
+    color: #222222;
+    padding: 60px 40px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.all-books-section .container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: "Prata", Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#books-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* ===== СІТКА КАРТОК ===== */
+.cards-list {
+    background: #fcf8f8;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+/* Рівно 5 карток в одному рядку.
+   ВАЖЛИВО: це єдине місце, де задаються колонки для #productsGrid.
+   Раніше їх перебивало правило "#books-container, #productsGrid" (3 колонки). */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+/* ===== КАРТКА ===== */
+.card {
+    display: flex;
+    flex-direction: column;
+    background: #fcebeb;
+    border-radius: 20px;
+    padding-bottom: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Обкладинка: книжні пропорції 2:3 при будь-якій ширині */
+.card-img-top {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    height: auto;
+    object-fit: cover;
+    background: #d9d9d9;
+    border: 2px solid #222;
+    border-radius: 20px;
+}
+
+/* Нижня рожева частина */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 12px 12px 0;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 15px;
+    line-height: 1.3;
+    margin: 0 0 8px;
+    /* назва — максимум 3 рядки */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-description {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #666;
+    margin: 0 0 12px;
+    flex: 1; /* щоб ціна і кнопка були на одному рівні у всіх карток */
+    /* опис — максимум 4 рядки */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-price {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 0 12px;
+}
+
+/* Кнопка внизу картки */
+.add-cart {
+    margin-top: auto;
+    align-self: center;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #f5b5b5;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-cart:hover {
+    background: #f09a9a;
+}
+
+/* ===== КОШИК (модальне вікно) ===== */
+.cart-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(23, 19, 19, 0.45);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cart-modal.open {
+    display: flex;
+}
+
+.cart-modal-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 560px;
+    max-height: 85vh;
+    background: #FCF8F8;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.cart-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    border-bottom: 1px solid #F5AEAE;
+}
+
+.cart-modal-header h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.close-cart {
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    line-height: 1;
+    color: #171313;
+    cursor: pointer;
+}
+
+.cart-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 24px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #F9DFDF;
+}
+
+.cart-item-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+}
+
+.cart-item-info img {
+    width: 50px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.cart-item-info span {
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.cart-item-controls button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    background: #F9DFDF;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cart-item-controls button:hover {
+    background: #F5AEAE;
+}
+
+.cart-modal-footer {
+    display: flex;
+    gap: 12px;
+    padding: 16px 24px 20px;
+    border-top: 1px solid #F5AEAE;
+}
+
+.clear-cart-btn,
+.checkout-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.clear-cart-btn {
+    background: #F9DFDF;
+    color: #171313;
+}
+
+.clear-cart-btn:hover {
+    background: #F5AEAE;
+}
+
+.checkout-btn {
+    flex: 1;
+    background: #f5b5b5;
+    color: #fff;
+}
+
+.checkout-btn:hover {
+    background: #f09a9a;
+}
+
+/* ===== АДАПТИВНІСТЬ ===== */
+@media (max-width: 1200px) {
+    .books-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+@media (max-width: 900px) {
+    .books-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .cards-list { padding: 24px; }
+    .hero-card { grid-template-columns: 1fr; gap: 30px; }
+}
+
+@media (max-width: 600px) {
+    .books-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+    .cards-list { padding: 16px; }
+    .header { padding: 16px 20px; }
+    .header-top { gap: 14px; }
+    .categories { gap: 8px; flex-wrap: wrap; }
+    .category-btn { padding: 8px 14px; }
+}
+.cart-modal-content img {
+    width: 50px;
+    height: 72px;
+    max-width: 50px;
+    max-height: 72px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.cart-items {
+    overflow-x: hidden;
+}
+.cards-list {
+    background: #F9DFDF;          /* розовая подложка под карточками */
+    border-radius: 0 0 24px 24px;
+}
+
+.card {
+    background: #FCF8F8;          /* кремовая карточка, как шапка */
+    border: 1px solid #F5AEAE;
+    box-shadow: 0 4px 14px rgba(23, 19, 19, 0.08);
+}
+
+.card:hover {
+    box-shadow: 0 10px 24px rgba(23, 19, 19, 0.16);
+}
+
+.card-img-top {
+    border: none;
+    border-bottom: 1px solid #F5AEAE;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-title {
+    color: #171313;
+    font-family: "Prata", Georgia, serif;
+    font-weight: 200;
+}
+
+.card-description {
+    color: #4a3f3f;               /* темнее прежнего #666 */
+}
+
+.card-price {
+    color: #171313;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Кнопка: тёмный текст на розовом читается лучше белого */
+.add-cart {
+    background: #F5AEAE;
+    color: #171313;
+    font-weight: 400;
+}
+
+.add-cart:hover {
+    background: #EE9696;
+}
+
+/* Активная категория чуть заметнее */
+.category-btn.active {
+    background: #F5AEAE;
+    color: #171313;
+    font-weight: 600;
+}
+
+/* Убирает горизонтальную прокрутку внизу страницы */
+body {
+    overflow-x: hidden;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FCF8F8;
+}
+
+.header {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cards-list {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0;
+}

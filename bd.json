@@ -1,0 +1,802 @@
+[
+  {
+    "id": 1,
+    "title": "Tschick — Wolfgang Herrndorf",
+    "isbn": "9783499256356",
+    "categories": "deutsch",
+    "description": "Культовий німецький підлітковий роман про двох аутсайдерів, які викрадають машину та вирушають у незабутню подорож літом.",
+    "cover": "/images/1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Tintenherz — Cornelia Funke",
+    "isbn": "9783791504667",
+    "categories": "deutsch",
+    "description": "Захоплива фентезі-історія про дівчинку, чий батько вміє виносити персонажів із книжок у реальний світ читанням уголос.",
+    "cover": "/images/2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Tintenblut — Cornelia Funke",
+    "isbn": "9783791504674",
+    "categories": "deutsch",
+    "description": "Друга частина казкової трилогії Корнелії Функе, де герої самі потрапляють усередину чарівного твору.",
+    "cover": "/images/3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Tintentod — Cornelia Funke",
+    "isbn": "9783791504681",
+    "categories": "deutsch",
+    "description": "Фінальна, епічна частина пригод у світі «Чорнильного серця», де розгортається битва проти тирана.",
+    "cover": "/images/4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Die unendliche Geschichte — Michael Ende",
+    "isbn": "9783522128002",
+    "categories": "deutsch",
+    "description": "Класичне фентезі про хлопчика Бастіана, який рятує країну Фантазію за допомогою чарівної книги.",
+    "cover": "/images/5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Momo — Michael Ende",
+    "isbn": "9783522176200",
+    "categories": "deutsch",
+    "description": "Філософська казка-роман про дівчинку Момо, яка протистоїть загадковим «сірим панам», що крадуть людський час.",
+    "cover": "/images/6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Krabat — Otfried Preußler",
+    "isbn": "9783423071550",
+    "categories": "deutsch",
+    "description": "Похмура й чарівна історія за мотивами лужицьких легенд про підмайстра на млині, де вивчають чорну магію.",
+    "cover": "/images/7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Das Austauschkind — Christine Nöstlinger",
+    "isbn": "9783407788153",
+    "categories": "deutsch",
+    "description": "Весела та життєва повість про культурний шок і пригоди під час міжнародного обміну школярами.",
+    "cover": "/images/8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Wir Kinder vom Bahnhof Zoo — Christiane F.",
+    "isbn": "9783551570505",
+    "categories": "deutsch",
+    "description": "Шокуюча й правдива біографічна книга про берлінських підлітків, що зіткнулися з наркозалежністю.",
+    "cover": "/images/9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Die Welle — Morton Rhue",
+    "isbn": "9783473580088",
+    "categories": "deutsch",
+    "description": "Психологічний роман про шкільний експеримент, який демонструє, як швидко суспільство скочується в тоталітаризм.",
+    "cover": "/images/10.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Damals war es Friedrich — Hans Peter Richter",
+    "isbn": "9783423070386",
+    "categories": "deutsch",
+    "description": "Зворушлива і трагічна історія двох друзів у Німеччині на тлі підйому нацизму та переслідування євреїв.",
+    "cover": "/images/11.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Erebos — Ursula Poznanski",
+    "isbn": "9783785568867",
+    "categories": "deutsch",
+    "description": "Напружений трилер про таємничу комп'ютерну гру, яка починає маніпулювати реальним життям підлітків.",
+    "cover": "/images/12.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Saeculum — Ursula Poznanski",
+    "isbn": "9783785573755",
+    "categories": "deutsch",
+    "description": "Роман про рольову гру середньовічного типу в лісі, яка перетворюється на небезпечне виживання.",
+    "cover": "/images/13.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Elanus — Ursula Poznanski",
+    "isbn": "9783785581971",
+    "categories": "deutsch",
+    "description": "Захопливий детектив про школяра з дроном, який випадково помічає зникнення людини і починає власне розслідування.",
+    "cover": "/images/14.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Rubinrot — Kerstin Gier",
+    "isbn": "9783791547990",
+    "categories": "deutsch",
+    "description": "Перша частина популярної серії «Таймлес» про дівчину Гвендолін, яка раптово успадковує ген подорожей у часі.",
+    "cover": "/images/15.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Saphirblau — Kerstin Gier",
+    "isbn": "9783791547976",
+    "categories": "deutsch",
+    "description": "Продовження пригод Гвендолін у часі, повне таємниць, інтриг мандрівників у часі та романтики.",
+    "cover": "/images/16.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Smaragdgrün — Kerstin Gier",
+    "isbn": "9783791547983",
+    "categories": "deutsch",
+    "description": "Заключна частина трилогії «Таймлес», де героїня розгадує фінальну загадку графів Сен-Жермен.",
+    "cover": "/images/17.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Silber: Das erste Buch der Träume — Kerstin Gier",
+    "isbn": "9783841502384",
+    "categories": "deutsch",
+    "description": "Містична молодіжна історія про коридори сновидінь, таємничі двері та загадкові ритуали у новому місті.",
+    "cover": "/images/18.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Rico, Oskar und die Tieferschatten — Andreas Steinhöfel",
+    "isbn": "9783551554574",
+    "categories": "deutsch",
+    "description": "Добрий і кумедний детектив про особливого хлопчика Ріко та його обдарованого друга Оскара, які шукають викрадача.",
+    "cover": "/images/19.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Die Mitte der Welt — Andreas Steinhöfel",
+    "isbn": "9783551582261",
+    "categories": "deutsch",
+    "description": "Глибокий роман про дорослішання, пошук себе, родинні таємниці та перше кохання хлопця на ім'я Філ.",
+    "cover": "/images/20.jpg"
+  },
+  {
+    "id": 21,
+    "title": "Das Parfum — Patrick Süskind",
+    "isbn": "9783257228007",
+    "categories": "deutsch",
+    "description": "Всесвітньо відомий психологічний трилер про геніального й моторошного парфумера Жана-Батиста Гренуя.",
+    "cover": "/images/21.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Der Vorleser — Bernhard Schlink",
+    "isbn": "9783257229530",
+    "categories": "deutsch",
+    "description": "Пронизливий роман про складні моральні дилеми повоєнної Німеччини та таємниці минулого.",
+    "cover": "/images/22.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Im Westen nichts Neues — Erich Maria Remarque",
+    "isbn": "9783462052697",
+    "categories": "deutsch",
+    "description": "Антивоєнна класика про молодих солдатів, які на фронті Першої світової втрачають юність і ілюзії.",
+    "cover": "/images/23.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Drei Kameraden — Erich Maria Remarque",
+    "isbn": "9783462052680",
+    "categories": "deutsch",
+    "description": "Глибока і сумна історія про дружбу, фронтове братерство та кохання у Німеччині часів Великої депресії.",
+    "cover": "/images/24.jpg"
+  },
+  {
+    "id": 25,
+    "title": "Die Verwandlung — Franz Kafka",
+    "isbn": "9783150099001",
+    "categories": "deutsch",
+    "description": "Знаменита алегорична повість Кафки про комерсанта Грегора Замсу, який одного ранку прокидається в образі комахи.",
+    "cover": "/images/25.jpg"
+  },
+  {
+    "id": 26,
+    "title": "Der Steppenwolf — Hermann Hesse",
+    "isbn": "9783518370346",
+    "categories": "deutsch",
+    "description": "Філософський роман Германа Гессе про внутрішній розкол людини між цивілізованим суспільством та дикою природою.",
+    "cover": "/images/26.jpg"
+  },
+  {
+    "id": 27,
+    "title": "Siddhartha — Hermann Hesse",
+    "isbn": "9783518366820",
+    "categories": "deutsch",
+    "description": "Поетична притча про духовний пошук і життєвий шлях юнака в Давній Індії.",
+    "cover": "/images/27.jpg"
+  },
+  {
+    "id": 28,
+    "title": "Schachnovelle — Stefan Zweig",
+    "isbn": "9783596216055",
+    "categories": "deutsch",
+    "description": "Психологічна новела про шахматний поєдинок на океанському лайнері та наслідки гестапівських тортур.",
+    "cover": "/images/28.jpg"
+  },
+  {
+    "id": 29,
+    "title": "Faust — Johann Wolfgang von Goethe",
+    "isbn": "9783150000014",
+    "categories": "deutsch",
+    "description": "Великий класичний твір німецької літератури про угоду вченого Фауста з дияволом Мефістофелем.",
+    "cover": "/images/29.jpg"
+  },
+  {
+    "id": 30,
+    "title": "Emil und die Detektive — Erich Kästner",
+    "isbn": "9783791530123",
+    "categories": "deutsch",
+    "description": "Дитячий детективний роман про берлінських школярів, які об'єднуються заради спільної справи.",
+    "cover": "/images/30.jpg"
+  },
+  {
+    "id": 31,
+    "title": "Menschen A1: Deutsch als Fremdsprache (Kursbuch)",
+    "isbn": "9783191019015",
+    "categories": "deutsch",
+    "description": "Популярний базовий підручник з німецької мови рівня А1 для початківців.",
+    "cover": "/images/31.jpg"
+  },
+  {
+    "id": 32,
+    "title": "Menschen A2: Deutsch als Fremdsprache (Kursbuch)",
+    "isbn": "9783191019022",
+    "categories": "deutsch",
+    "description": "Продовження курсу німецької мови для закріплення базових знань на рівні А2.",
+    "cover": "/images/32.jpg"
+  },
+  {
+    "id": 33,
+    "title": "Menschen B1: Deutsch als Fremdsprache (Kursbuch)",
+    "isbn": "9783191019039",
+    "categories": "deutsch",
+    "description": "Навчальний посібник рівня В1 для впевненого володіння німецькою мовою.",
+    "cover": "/images/33.jpg"
+  },
+  {
+    "id": 34,
+    "title": "Sicher! B2: Deutsch als Fremdsprache (Kursbuch)",
+    "isbn": "9783195012074",
+    "categories": "deutsch",
+    "description": "Надійний підручник для глибокого вивчення німецької мови на середньо-просунутому рівні В2.",
+    "cover": "/images/34.jpg"
+  },
+  {
+    "id": 35,
+    "title": "Sicher! C1: Deutsch als Fremdsprache (Kursbuch)",
+    "isbn": "9783191212072",
+    "categories": "deutsch",
+    "description": "Академічний посібник для опанування німецької мови на високому рівні C1.",
+    "cover": "/images/35.jpg"
+  },
+  {
+    "id": 36,
+    "title": "Schritte plus Neu A1.1: Kurs- und Arbeitsbuch",
+    "isbn": "9783193010812",
+    "categories": "deutsch",
+    "description": "Комплексний курс (підручник і зошит) для легкого старту у вивченні німецької.",
+    "cover": "/images/36.jpg"
+  },
+  {
+    "id": 37,
+    "title": "Schritte plus Neu A2.1: Kurs- und Arbeitsbuch",
+    "isbn": "9783193010843",
+    "categories": "deutsch",
+    "description": "Продовження лінійки Schritte plus для студентів рівня А2.1.",
+    "cover": "/images/37.jpg"
+  },
+  {
+    "id": 38,
+    "title": "Schritte plus Neu B1.1: Kurs- und Arbeitsbuch",
+    "isbn": "9783193010874",
+    "categories": "deutsch",
+    "description": "Навчальний матеріал з німецької мови для систематичної підготовки на рівні B1.1.",
+    "cover": "/images/38.jpg"
+  },
+  {
+    "id": 39,
+    "title": "Aspekte neu B2: Mittelstufe Deutsch (Lehrbuch)",
+    "isbn": "9783126050258",
+    "categories": "deutsch",
+    "description": "Інтенсивний підручник з розвитку навичок спілкування та академічної мови на рівні B2.",
+    "cover": "/images/39.jpg"
+  },
+  {
+    "id": 40,
+    "title": "Aspekte neu C1: Mittelstufe Deutsch (Lehrbuch)",
+    "isbn": "9783126050357",
+    "categories": "deutsch",
+    "description": "Складніший рівень курсу Aspekte для вдосконалення німецької мови до рівня C1.",
+    "cover": "/images/40.jpg"
+  },
+  {
+    "id": 41,
+    "title": "Grammatik aktiv A1–B1 — Cornelsen",
+    "isbn": "9783060239726",
+    "categories": "deutsch",
+    "description": "Зручний довідник з німецької граматики з практичними вправами для рівнів А1-В1.",
+    "cover": "/images/41.jpg"
+  },
+  {
+    "id": 42,
+    "title": "Grammatik aktiv B2/C1 — Cornelsen",
+    "isbn": "9783060203475",
+    "categories": "deutsch",
+    "description": "Поглиблений граматичний тренажер для старших рівнів німецької мови.",
+    "cover": "/images/42.jpg"
+  },
+  {
+    "id": 43,
+    "title": "Begegnungen A1+: Integriertes Kurs- und Arbeitsbuch",
+    "isbn": "9783929540897",
+    "categories": "deutsch",
+    "description": "Популярний інтегрований курс німецької мови для початківців.",
+    "cover": "/images/43.jpg"
+  },
+  {
+    "id": 44,
+    "title": "Begegnungen A2+: Integriertes Kurs- und Arbeitsbuch",
+    "isbn": "9783939914011",
+    "categories": "deutsch",
+    "description": "Продовження комунікативного курсу Begegnungen для рівня А2+.",
+    "cover": "/images/44.jpg"
+  },
+  {
+    "id": 45,
+    "title": "Erkundungen B2: Integriertes Kurs- und Arbeitsbuch",
+    "isbn": "9783939914035",
+    "categories": "deutsch",
+    "description": "Комплексний підручник для детального опрацювання німецької граматики та лексики на рівні B2.",
+    "cover": "/images/45.jpg"
+  },
+  {
+    "id": 46,
+    "title": "Erkundungen C1: Integriertes Kurs- und Arbeitsbuch",
+    "isbn": "9783939914059",
+    "categories": "deutsch",
+    "description": "Високоякісний посібник для розширення словникового запасу на рівні C1.",
+    "cover": "/images/46.jpg"
+  },
+  {
+    "id": 47,
+    "title": "Netzwerk neu A1: Kursbuch",
+    "isbn": "9783126061414",
+    "categories": "deutsch",
+    "description": "Сучасний комунікативний підручник з яскравими ілюстраціями та аудіоматеріалами.",
+    "cover": "/images/47.jpg"
+  },
+  {
+    "id": 48,
+    "title": "Netzwerk neu B1: Kursbuch",
+    "isbn": "9783126061612",
+    "categories": "deutsch",
+    "description": "Підручник серії Netzwerk для досягнення впевненого рівня В1.",
+    "cover": "/images/48.jpg"
+  },
+  {
+    "id": 49,
+    "title": "Duden: Die deutsche Rechtschreibung",
+    "isbn": "9783411040179",
+    "categories": "deutsch",
+    "description": "Головний орфографічний словник німецької мови — обов'язкова настольна книга.",
+    "cover": "/images/49.jpg"
+  },
+  {
+    "id": 50,
+    "title": "Langenscheidt: Großwörterbuch Deutsch als Fremdsprache",
+    "isbn": "9783468490422",
+    "categories": "deutsch",
+    "description": "Великий тлумачний словник німецької мови, спеціально адаптований для іноземців.",
+    "cover": "/images/50.jpg"
+  },
+  {
+    "id": 51,
+    "title": "Percy Jackson & the Olympians: The Lightning Thief — Rick Riordan",
+    "isbn": "9780786838653",
+    "categories": "english",
+    "description": "Перша книга фентезійної саги про підлітка Персі Джексона, який виявляється сином грецького бога Посейдона.",
+    "cover": "/images/51.jpg"
+  },
+  {
+    "id": 52,
+    "title": "Percy Jackson & the Olympians: The Sea of Monsters — Rick Riordan",
+    "isbn": "9780786856862",
+    "categories": "english",
+    "description": "Продовження пригод Персі, де йому потрібно знайти Золоте Руно в таємничому Морі Чудовиськ.",
+    "cover": "/images/52.jpg"
+  },
+  {
+    "id": 53,
+    "title": "Percy Jackson & the Olympians: The Titan's Curse — Rick Riordan",
+    "isbn": "9781423101450",
+    "categories": "english",
+    "description": "Третя частина пригод напівбогів, що рятують викрадену богиню Артеміду.",
+    "cover": "/images/53.jpg"
+  },
+  {
+    "id": 54,
+    "title": "Percy Jackson & the Olympians: The Battle of the Labyrinth — Rick Riordan",
+    "isbn": "9781423101469",
+    "categories": "english",
+    "description": "Герої досліджують підземний міфічний Лабіринт Дедала, щоб зупинити армію Кроноса.",
+    "cover": "/images/54.jpg"
+  },
+  {
+    "id": 55,
+    "title": "Percy Jackson & the Olympians: The Last Olympian — Rick Riordan",
+    "isbn": "9781423101476",
+    "categories": "english",
+    "description": "Грандіозна фінальна битва за гору Олімп між армією олімпійців та титанами.",
+    "cover": "/images/55.jpg"
+  },
+  {
+    "id": 56,
+    "title": "The Maze Runner — James Dashner",
+    "isbn": "9780385737943",
+    "categories": "english",
+    "description": "Культовий антиутопічний трилер про хлопців, які прокидаються у загадковому та смертоносному Лабіринті.",
+    "cover": "/images/56.jpg"
+  },
+  {
+    "id": 57,
+    "title": "The Scorch Trials — James Dashner",
+    "isbn": "9780385738766",
+    "categories": "english",
+    "description": "Друга частина випробувань Глейдерів у випаленій спекою пустелі.",
+    "cover": "/images/57.jpg"
+  },
+  {
+    "id": 58,
+    "title": "The Death Cure — James Dashner",
+    "isbn": "9780385738780",
+    "categories": "english",
+    "description": "Фінальна частина боротьби проти корпорації «ПОРОК» та пошуку ліків від вірусу.",
+    "cover": "/images/58.jpg"
+  },
+  {
+    "id": 59,
+    "title": "The Kill Order — James Dashner",
+    "isbn": "9780385741392",
+    "categories": "english",
+    "description": "Приквел до «Той, що біжить лабіринтом», що розповідає про початок апокаліпсису на Землі.",
+    "cover": "/images/59.jpg"
+  },
+  {
+    "id": 60,
+    "title": "The Fever Code — James Dashner",
+    "isbn": "9780385741422",
+    "categories": "english",
+    "description": "Передісторія про те, як будувався лабіринт очима головного творця Томаса.",
+    "cover": "/images/60.jpg"
+  },
+  {
+    "id": 61,
+    "title": "Harry Potter and the Philosopher's Stone — J.K. Rowling",
+    "isbn": "9780747532743",
+    "categories": "english",
+    "description": "Всесвітньо відомий початок історії про хлопця-чарівника, який вирушає до Гоґвортсу.",
+    "cover": "/images/61.jpg"
+  },
+  {
+    "id": 62,
+    "title": "The Hunger Games — Suzanne Collins",
+    "isbn": "9780439023481",
+    "categories": "english",
+    "description": "Жорстока антиутопія про смертельні телевізійні ігри на виживання у тоталітарній країні.",
+    "cover": "/images/62.jpg"
+  },
+  {
+    "id": 63,
+    "title": "Catching Fire — Suzanne Collins",
+    "isbn": "9780439023498",
+    "categories": "english",
+    "description": "Друга частина протистояння Катнісс Евердін проти деспотичного Капітолію.",
+    "cover": "/images/63.jpg"
+  },
+  {
+    "id": 64,
+    "title": "Mockingjay — Suzanne Collins",
+    "isbn": "9780439023511",
+    "categories": "english",
+    "description": "Фінал повстання та революції проти президента Сноу у трилогії «Голодні ігри».",
+    "cover": "/images/64.jpg"
+  },
+  {
+    "id": 65,
+    "title": "Divergent — Veronica Roth",
+    "isbn": "9780062024039",
+    "categories": "english",
+    "description": "Підліткова антиутопія у світі, де суспільство поділене на фракції за рисами характеру.",
+    "cover": "/images/65.jpg"
+  },
+  {
+    "id": 66,
+    "title": "The Fault in Our Stars — John Green",
+    "isbn": "9780525478812",
+    "categories": "english",
+    "description": "Зворушлива і глибока драма про двох закоханих підлітків, які борються з важкою хворобою.",
+    "cover": "/images/66.jpg"
+  },
+  {
+    "id": 67,
+    "title": "Looking for Alaska — John Green",
+    "isbn": "9780142402511",
+    "categories": "english",
+    "description": "Дебютний роман Джона Гріна про пошуки сенсу життя та складні підліткові емоції.",
+    "cover": "/images/67.jpg"
+  },
+  {
+    "id": 68,
+    "title": "Six of Crows — Leigh Bardugo",
+    "isbn": "9781627792127",
+    "categories": "english",
+    "description": "Захопливе фентезі про команду шістьох небезпечних злочинців, які планують неможливе пограбування.",
+    "cover": "/images/68.jpg"
+  },
+  {
+    "id": 69,
+    "title": "Crooked Kingdom — Leigh Bardugo",
+    "isbn": "9781627792134",
+    "categories": "english",
+    "description": "Продовження кримінальних пригод Каза Бреккера та його команди у світі Грішаверсу.",
+    "cover": "/images/69.jpg"
+  },
+  {
+    "id": 70,
+    "title": "The Cruel Prince — Holly Black",
+    "isbn": "9780316310314",
+    "categories": "english",
+    "description": "Темне фентезі про підступний світ ельфів, палацові інтриги та смертну дівчину Джуд.",
+    "cover": "/images/70.jpg"
+  },
+  {
+    "id": 71,
+    "title": "1984 — George Orwell",
+    "isbn": "9780451524935",
+    "categories": "english",
+    "description": "Культова антиутопія Джорджа Орвелла про тоталітарний режим, стеження та контроль над мисленням.",
+    "cover": "/images/71.jpg"
+  },
+  {
+    "id": 72,
+    "title": "Animal Farm — George Orwell",
+    "isbn": "9780451526342",
+    "categories": "english",
+    "description": "Сатирична алегорична повість про революцію тварин на фермі та появу нової диктатури.",
+    "cover": "/images/72.jpg"
+  },
+  {
+    "id": 73,
+    "title": "The Great Gatsby — F. Scott Fitzgerald",
+    "isbn": "9780743273565",
+    "categories": "english",
+    "description": "Класичний американський роман про «джазову епоху», розкіш та ілюзії американської мрії.",
+    "cover": "/images/73.jpg"
+  },
+  {
+    "id": 74,
+    "title": "To Kill a Mockingbird — Harper Lee",
+    "isbn": "9780061120084",
+    "categories": "english",
+    "description": "Пронизлива книга про расизм, справедливість та дитячий погляд на дорослий світ.",
+    "cover": "/images/74.jpg"
+  },
+  {
+    "id": 75,
+    "title": "The Catcher in the Rye — J.D. Salinger",
+    "isbn": "9780316769488",
+    "categories": "english",
+    "description": "Знаменитий роман про бунт підлітка Голдена Колфілда проти фальші дорослого світу.",
+    "cover": "/images/75.jpg"
+  },
+  {
+    "id": 76,
+    "title": "Fahrenheit 451 — Ray Bradbury",
+    "isbn": "9781451673319",
+    "categories": "english",
+    "description": "Науково-фантастична антиутопія про суспільство майбутнього, де книги суворо заборонені й спалюються.",
+    "cover": "/images/76.jpg"
+  },
+  {
+    "id": 77,
+    "title": "Dune — Frank Herbert",
+    "isbn": "9780441172719",
+    "categories": "english",
+    "description": "Шедевр наукової фантастики про пустельну планету Арракіс, прянощі та боротьбу за владу.",
+    "cover": "/images/77.jpg"
+  },
+  {
+    "id": 78,
+    "title": "The Hobbit — J.R.R. Tolkien",
+    "isbn": "9780547928227",
+    "categories": "english",
+    "description": "Чарівна казка-фентезі про несподівану подорож Більбо Торбинса та його пригоди зі скарбом дракона.",
+    "cover": "/images/78.jpg"
+  },
+  {
+    "id": 79,
+    "title": "Pride and Prejudice — Jane Austen",
+    "isbn": "9780141439518",
+    "categories": "english",
+    "description": "Класичний роман Джейн Остін про взаємини, гордість та упередження в англійському суспільстві.",
+    "cover": "/images/79.jpg"
+  },
+  {
+    "id": 80,
+    "title": "The Little Prince — Antoine de Saint-Exupéry",
+    "isbn": "9780156012194",
+    "categories": "english",
+    "description": "Філософська казка про маленького принца, який мандрує по планетах і пізнає справжні цінності.",
+    "cover": "/images/80.jpg"
+  },
+  {
+    "id": 81,
+    "title": "English File Elementary: Student's Book — Oxford",
+    "isbn": "9780194036610",
+    "categories": "english",
+    "description": "Популярний базовий підручник з англійської мови від видавництва Oxford для початківців.",
+    "cover": "/images/81.jpg"
+  },
+  {
+    "id": 82,
+    "title": "English File Pre-Intermediate: Student's Book — Oxford",
+    "isbn": "9780194037419",
+    "categories": "english",
+    "description": "Навчальний курс для продовження вивчення англійської на рівні Pre-Intermediate.",
+    "cover": "/images/82.jpg"
+  },
+  {
+    "id": 83,
+    "title": "English File Intermediate: Student's Book — Oxford",
+    "isbn": "9780194031523",
+    "categories": "english",
+    "description": "Класичний підручник для впевненого спілкування та граматики на рівні Intermediate.",
+    "cover": "/images/83.jpg"
+  },
+  {
+    "id": 84,
+    "title": "English File Upper-Intermediate: Student's Book — Oxford",
+    "isbn": "9780194039864",
+    "categories": "english",
+    "description": "Поглиблений курс для вдосконалення англійської мови на рівні Upper-Intermediate.",
+    "cover": "/images/84.jpg"
+  },
+  {
+    "id": 85,
+    "title": "English File Advanced: Student's Book — Oxford",
+    "isbn": "9780194038133",
+    "categories": "english",
+    "description": "Високоякісний підручник для впевненого володіння англійською на просунутому рівні.",
+    "cover": "/images/85.jpg"
+  },
+  {
+    "id": 86,
+    "title": "English Grammar in Use — Raymond Murphy",
+    "isbn": "9780521189064",
+    "categories": "english",
+    "description": "Легендарний синій довідник з англійської граматики з практичними вправами.",
+    "cover": "/images/86.jpg"
+  },
+  {
+    "id": 87,
+    "title": "Essential Grammar in Use — Raymond Murphy",
+    "isbn": "9781107480537",
+    "categories": "english",
+    "description": "Червоний базовий збірник граматики Мерфі для початківців.",
+    "cover": "/images/87.jpg"
+  },
+  {
+    "id": 88,
+    "title": "Advanced Grammar in Use — Martin Hewings",
+    "isbn": "9781107539303",
+    "categories": "english",
+    "description": "Поглиблена граматика для студентів високого рівня.",
+    "cover": "/images/88.jpg"
+  },
+  {
+    "id": 89,
+    "title": "English Vocabulary in Use: Intermediate — Stuart Redman",
+    "isbn": "9780521149890",
+    "categories": "english",
+    "description": "Збірник лексики та корисних слів для середнього рівня.",
+    "cover": "/images/89.jpg"
+  },
+  {
+    "id": 90,
+    "title": "English Vocabulary in Use: Upper-Intermediate — Michael McCarthy",
+    "isbn": "9781107657960",
+    "categories": "english",
+    "description": "Словниковий тренажер для розширення словникового запасу на рівні Upper-Intermediate.",
+    "cover": "/images/90.jpg"
+  },
+  {
+    "id": 91,
+    "title": "Speakout Starter: Students' Book — Pearson",
+    "isbn": "9781447978258",
+    "categories": "english",
+    "description": "Комунікативний підручник англійської для розвитку розмовних навичок з нуля.",
+    "cover": "/images/91.jpg"
+  },
+  {
+    "id": 92,
+    "title": "Speakout Intermediate: Students' Book — Pearson",
+    "isbn": "9781447977152",
+    "categories": "english",
+    "description": "Курс Speakout для практики аудіювання та впевненого говоріння на рівні Intermediate.",
+    "cover": "/images/92.jpg"
+  },
+  {
+    "id": 93,
+    "title": "Speakout Upper-Intermediate: Students' Book — Pearson",
+    "isbn": "9781447970979",
+    "categories": "english",
+    "description": "Просунутий комунікативний підручник для складних дискусій та бізнес-тев.",
+    "cover": "/images/93.jpg"
+  },
+  {
+    "id": 94,
+    "title": "Empower B1+: Student's Book — Cambridge",
+    "isbn": "9781107466980",
+    "categories": "english",
+    "description": "Сучасний комплексний підручник від видавництва Кембридж для рівня B1+.",
+    "cover": "/images/94.jpg"
+  },
+  {
+    "id": 95,
+    "title": "Empower B2: Student's Book — Cambridge",
+    "isbn": "9781107465945",
+    "categories": "english",
+    "description": "Кембриджський курс для вдосконалення мовних навичок на рівні B2.",
+    "cover": "/images/95.jpg"
+  },
+  {
+    "id": 96,
+    "title": "Destination B1: Grammar & Vocabulary — Malcolm Mann",
+    "isbn": "9780230035362",
+    "categories": "english",
+    "description": "Ефективний посібник для паралельного вивчення граматики та лексики на рівні B1.",
+    "cover": "/images/96.jpg"
+  },
+  {
+    "id": 97,
+    "title": "Destination B2: Grammar & Vocabulary — Malcolm Mann",
+    "isbn": "9780230035386",
+    "categories": "english",
+    "description": "Популярний тренажер для підготовки до іспитів на рівні B2.",
+    "cover": "/images/97.jpg"
+  },
+  {
+    "id": 98,
+    "title": "Destination C1 & C2: Grammar & Vocabulary — Malcolm Mann",
+    "isbn": "9780230035409",
+    "categories": "english",
+    "description": "Просунутий збірник завдань для опанування найскладніших тем англійської.",
+    "cover": "/images/98.jpg"
+  },
+  {
+    "id": 99,
+    "title": "The Official Cambridge Guide to IELTS",
+    "isbn": "9781316637860",
+    "categories": "english",
+    "description": "Офіційний повний посібник для підготовки до міжнародного іспиту IELTS з порадами.",
+    "cover": "/images/99.jpg"
+  },
+  {
+    "id": 100,
+    "title": "Oxford Advanced Learner's Dictionary",
+    "isbn": "9780194798535",
+    "categories": "english",
+    "description": "Найавторитетніший тлумачний словник англійської мови для студентів та викладачів.",
+    "cover": "/images/100.jpg"
+  }
+]

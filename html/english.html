@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endelit - Англійська література</title>
+    <link rel="stylesheet" href="/css/english.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-top">
+        <a href="index.html" class="logo">
+            <div class="icon-placeholder logo-icon-placeholder"></div>
+            <span class="logo-text"><h1>ENDELIT</h1></span>
+        </a>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Пошук книг...">
+        </div>
+
+        <button type="button" class="cart-btn" id="cartBtn" aria-label="Кошик">
+            🛒 <span id="cartCount">0</span>
+        </button>
+    </div>
+
+    <nav class="categories">
+        <a href="index.html" class="category-btn">Все</a>
+        <a href="deutsch.html" class="category-btn">Німецька література</a>
+        <a href="english.html" class="category-btn active">Англійська література</a>
+    </nav>
+</header>
+
+<main class="main-content">
+    <section class="cards-list">
+        <!-- Атрибут кастомной категории для этой страницы -->
+        <div id="productsGrid" data-page-category="english" class="books-grid"></div>
+    </section>
+</main>
+
+<!-- Модальное окно корзины -->
+
+
+<script src="/script.js"></script>
+</body>
+</html>
